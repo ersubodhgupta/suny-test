@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="defaultStripingContext"
+		class="com.expedia.www.shared.ui.stcs.config.DefaultStripingContext" />
+
+	<bean id="siteIdHierarchMap" class="com.expedia.www.domain.config.SiteIdHierarchyMap">
+		<constructor-arg type="String"
+			value="/content_config/global/siteid_hierarchy.xml" />
+	</bean>
+</beans>
